@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>PNI<!--Prime Number Identifier--></title>
+</head>
+
+<body id="body" style="background-image: url(th.jpg); background-repeat: no-repeat; background-size: cover;">
+    <audio src="buzzer.mp3" id="buzzer"></audio>
+    <audio src="success.mp3" id="success"></audio>
+    <center>
+        <div id="div1">
+            <h2 id="title">Input a natural number greater than 1 and view if it is a prime.</h2>
+            <input id="input" type="number">
+            <span><button id="Enter" onclick="filter();">Enter</button></span>
+            <div id="result_box">
+                <h1 id="ResultLabel">Results show here </h1>
+                <h2>If the number is composite; Its fifth smallest divisors will be shown here.</h2>
+                <h2 id="divisibility1">First Divisor</h2>
+                <h2 id="divisibility2">Second Divisor</h2>
+                <h2 id="divisibility3">Third Divisor</h2>
+                <h2 id="divisibility4">Fourth Divisor</h2>
+                <h2 id="divisibility5">Fifth Divisor</h2>
+                <h2 id="rootcheck">It will check if the number is a perfect square root. AKA Taking the square root of
+                    the number gives a rational output.</h2>
+                <h2 id="error">Errors will be shown here</h2>
+            </div>
+        </div>
+        <div id="div2">
+            <h2 id="logtitle">Logs / History</h2>
+            <div id="logbox" readonly="true">
+
+            </div>
+            <button id="DeleteLast" onclick="deleteLastLine()">Delete last line</button>
+            <button id="DeleteAll" onclick="deleteAll()">Delete all lines</button>
+        </div>
+        <br><br>
+        <div id='div3'>
+            <h2 id="glossarytitle">Glossary</h2>
+            <div id="glossarybox">
+                <h2>Natural Number: A Natural Number is a number that is an integer which is greater or equal to one.
+                </h2>
+                <h2>Composite Number: A Composite Number, like its name suggests, is a Natural Number that is divisible
+                    by any other number other than 1 and itself.</h2>
+                <h2>Prime Number: A Prime Number is a Natural Number that is only divisble by 1 and itself and taking
+                    any root (thats greater than one) of it will never result in a rational number. </h2>
+            </div>
+            <footer>Made by Ward</footer>
+        </div>
+    </center>
+</body>
+<script src="main.js"></script>
+
+</html>
